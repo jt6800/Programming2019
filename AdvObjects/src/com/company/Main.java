@@ -22,8 +22,7 @@ public class Main {
             while (Player1.getHealth() > 0 && NewEnemy.getHealth() > 0) {
                 Player1.menu(NewEnemy);
                 NewEnemy.takeDamage(Player1);
-
-
+                Player1.takeDamage(NewEnemy);
             }
 
         }
