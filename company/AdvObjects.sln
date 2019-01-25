@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28407.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvObjects", "AdvObjects.csproj", "{EE9E092A-6120-4C2E-A47A-C81F6B35F6F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE9E092A-6120-4C2E-A47A-C81F6B35F6F1}.Debug|x86.ActiveCfg = Debug|x86
+		{EE9E092A-6120-4C2E-A47A-C81F6B35F6F1}.Debug|x86.Build.0 = Debug|x86
+		{EE9E092A-6120-4C2E-A47A-C81F6B35F6F1}.Release|x86.ActiveCfg = Release|x86
+		{EE9E092A-6120-4C2E-A47A-C81F6B35F6F1}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E3CB0F5-8939-4A21-853F-A9E6DA72E687}
+	EndGlobalSection
+EndGlobal
