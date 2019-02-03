@@ -42,13 +42,7 @@ namespace TestProjBegClasses
             }
             public Animal newAnimal()
             {
-            Console.WriteLine("What kind of animal?");
-            string species = Console.ReadLine();
-            Console.WriteLine("What is it's name?");
-            string name = Console.ReadLine();
-            Console.WriteLine("What color is animal?");
-            string color = Console.ReadLine();
-            Animal Animal1 = new Animal(species, name, color);
+            
         }
         }
 }
