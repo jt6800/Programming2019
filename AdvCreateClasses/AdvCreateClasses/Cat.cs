@@ -14,6 +14,7 @@ namespace AdvCreateClasses
         public Cat(string name)
         {
             this.name = name;
+            this.species = "cat";
         }
 
         public void MakeSound()

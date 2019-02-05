@@ -10,6 +10,12 @@ namespace AdvCreateClasses
     {
         static void Main(string[] args)
         {
+            Animal newAnimal = new Animal("fish", "dory");
+            Cat newCat = new Cat("joey");
+            Dog newDog = new Dog("gracie", true);
+            Garfield newGarfield = new Garfield();
+            OrangeTabby newOrangeTabby = new OrangeTabby("bobby");
+            RussianBlue newRussianBlue = new RussianBlue("jimmy");
         }
     }
 }
