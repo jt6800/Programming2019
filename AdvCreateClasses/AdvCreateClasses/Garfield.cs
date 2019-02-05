@@ -6,22 +6,20 @@ using System.Threading.Tasks;
 
 namespace AdvCreateClasses
 {
-    class Dog
+    class Garfield
     {
         string species;
         string name;
-        bool dockedTail;
 
-        public Dog(string name, bool dockedTail)
+        public Garfield()
         {
-            species = "dog";
-            this.name = name;
-            this.dockedTail = dockedTail;
+            this.species = "Cat";
+            this.name = "Garfield";
         }
 
         public void MakeSound()
         {
-            Console.WriteLine("Woof");
+            Console.WriteLine("mmmm, lasagna");
         }
 
         public void PrintName()
@@ -29,15 +27,19 @@ namespace AdvCreateClasses
             Console.WriteLine(this.name);
         }
 
-        public void PlayFetch()
+        public void BeHappy()
         {
-            Console.WriteLine("*chases ball 5 times then quits*");
+            this.LayOnLap();
         }
 
-        public bool getDockedTail()
+        public void LayOnLap()
         {
-            return this.dockedTail;
+            Console.WriteLine("*takes a nap*");
         }
 
+        public void SeeLaser()
+        {
+            this.BeHappy();
+        }
     }
 }
