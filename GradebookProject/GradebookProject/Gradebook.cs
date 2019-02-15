@@ -8,5 +8,9 @@ namespace GradebookProject
 {
     class Gradebook
     {
+        //properties
+        //list/array of sections
+        //current section
+        
     }
 }
