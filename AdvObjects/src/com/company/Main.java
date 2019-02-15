@@ -24,8 +24,10 @@ public class Main {
                 NewEnemy.takeDamage(Player1);
                 Player1.takeDamage(NewEnemy);
             }
-
         }
+        System.out.println("Level: "+Player1.playerLevel);
+        System.out.println("XP: "+Player1.xp);
+
     }
 }
 
