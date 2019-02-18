@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace GradebookProject
 {
-    class Gradebook
+    class Section
     {
+        string sectionName;
 
     }
 }
