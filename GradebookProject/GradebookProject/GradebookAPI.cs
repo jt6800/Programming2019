@@ -13,14 +13,7 @@ namespace GradebookProject
             
         }
 
-        boolean AddStudent(String firstName, String lastName, string username, long phoneNumber)
-        {
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.username = username;
-            this.phoneNumber = phoneNumber;
-            return true;
-        }
+        
 
         double getOverallScore(String username)
         {
