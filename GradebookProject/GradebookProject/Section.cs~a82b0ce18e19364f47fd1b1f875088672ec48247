@@ -8,12 +8,8 @@ namespace GradebookProject
 {
     class Section
     {
+        string sectionName;
 
-        string firstName;
-        string lastName;
-        string phoneNumber;
-        string username;
-             
     }
-   
+
 }
