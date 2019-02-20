@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +8,22 @@ namespace GradebookProject
 {
     class Gradebook
     {
+        changeSection(string sectionName)
+        {
+            globalSectionName = sectionName;
+        }
 
+        double getOverallScore(String username)
+        {
+            return ((this.pointsEarned) / (this.pointsPossible));
+        }
+
+        double getOverallScoreAvg(string sectionName)
+        {
+            return ((this.sectionPointsEarned) / (this.sectionPointsPossible));
+        }
+
+        
     }
 }
+*/

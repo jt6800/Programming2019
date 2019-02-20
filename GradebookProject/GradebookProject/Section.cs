@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,11 +9,10 @@ namespace GradebookProject
     class Section
     {
 
-        string firstName;
-        string lastName;
-        string phoneNumber;
-        string username;
-             
+        string sectionName;
+        int numberStudents;
+        int numberAssignments;
     }
    
 }
+*/
