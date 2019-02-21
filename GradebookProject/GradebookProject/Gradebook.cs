@@ -8,6 +8,14 @@ namespace GradebookProject
 {
     class Gradebook
     {
+        // properties
+        int sectionNumber;
+        //array of sections
+            //list of students w/in section
+                //array of data
+            //list of assignments for redundancy
+
+        //methods from methodsneedtoimplement.txt
         changeSection(string sectionName)
         {
             globalSectionName = sectionName;
