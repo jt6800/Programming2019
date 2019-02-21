@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,8 +12,9 @@ namespace GradebookProject
         string lastName;
         string username;
         string phoneNumber;
+        int internalID;
 
-        bool AddStudent(string firstName, string lastName, string username, string phoneNumber)
+        bool InternalAddStudent(string firstName, string lastName, string username, string phoneNumber)
         {
             this.firstName = firstName;
             this.lastName = lastName;
@@ -28,4 +29,3 @@ namespace GradebookProject
         }
     }
 }
-*/

@@ -10,8 +10,8 @@ namespace GradebookProject
     {
         static void Main(string[] args)
         {
-            string globalSectionName;
-
+            int sectionNumber;
+            int internalID = 0;
             Console.WriteLine("Welcome to JT's Gradebook v0.1");
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();

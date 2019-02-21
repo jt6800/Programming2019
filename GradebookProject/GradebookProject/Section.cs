@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +12,12 @@ namespace GradebookProject
         string sectionName;
         int numberStudents;
         int numberAssignments;
+        int sectionNumber;
+
+        public static bool addSection(string sectionName)
+        {
+            
+        }
     }
    
 }
-*/

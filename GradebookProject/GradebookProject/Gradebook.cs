@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +10,8 @@ namespace GradebookProject
     {
         // properties
         int sectionNumber;
-        //array of sections
+        int internalID = 0; //sets student internal id to 0
+        List<Section> sections = new List<Section>(); //list of sections
             //list of students w/in section
                 //array of data
             //list of assignments for redundancy
@@ -31,9 +32,19 @@ namespace GradebookProject
             return ((this.sectionPointsEarned) / (this.sectionPointsPossible));
         }
 
-        boolean AddStudent(String firstName, String lastName, string username, long phoneNumber); //creates a new student
+        bool AddStudent(String firstName, String lastName, string username, long phoneNumber)
+        {
 
-double getOverallScore(String username) //returns overall score as a percentage for specified student
+        }
+
+        bool addSection()
+        {
+            Console.WriteLine("Please enter the name of the section");
+            string internalSectionName = Console.ReadLine();
+            Section.addSection(internalSectionName);
+        }
+
+/*double getOverallScore(String username) //returns overall score as a percentage for specified student
 
 double getOverallScoreAvg(String sectionName) //returns overall score as a percentage for a section
 
@@ -47,7 +58,7 @@ double getAssignmentScorePercent(String username, String assignmentName) //retur
 
 double getAssignmentScoreAvg(String assignmentName) //returns score as a percentage for current section
 
-boolean addSection(String sectionName)//creates a new section if there are not already 6 sections and sectionName isnt already used 
+ 
 
 boolean markTardy(String username) //adds 1 to the students tardy count
 
