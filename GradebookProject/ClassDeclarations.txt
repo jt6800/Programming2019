@@ -1,7 +1,0 @@
-//MainInterface
-	//Gradebook API Section (methods)
-		//Section (name, ID, students (list), Assignments (list))
-		//Student (First Name, Last Name, ID, Assignments (list))
-		//Assignment (Name, ID, Students Assigned)
-	//End Gradebook AIP Section
-//End Main Interface
