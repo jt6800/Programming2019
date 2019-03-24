@@ -20,6 +20,9 @@ namespace Gradebook
         // Returns: true if it succeeds false if it fails(no section that matches that name).
         public bool changeSection(string sectionName)
         {
+            Console.WriteLine("Which Section?");
+            
+
             return false; //FIXME
         }
 

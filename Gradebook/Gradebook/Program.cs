@@ -28,6 +28,15 @@ namespace Gradebook
             options[12] = "get tardy count";
             options[13] = "get absent count";
 
+            //set up sectionArray
+            string[] sectionArray = new string[6];
+            sectionArray[0] = null;
+            sectionArray[1] = null;
+            sectionArray[2] = null;
+            sectionArray[3] = null;
+            sectionArray[4] = null;
+            sectionArray[5] = null;
+
 
             //main loop to get input:
             while (true)
