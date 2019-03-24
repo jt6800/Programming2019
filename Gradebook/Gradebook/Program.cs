@@ -37,7 +37,7 @@ namespace Gradebook
             sectionArray[4] = null;
             sectionArray[5] = null;
 
-
+            
             //main loop to get input:
             while (true)
             {
@@ -220,5 +220,4 @@ namespace Gradebook
         }
     }
 }
-    }
-}
+

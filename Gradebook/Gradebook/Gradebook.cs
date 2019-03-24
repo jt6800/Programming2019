@@ -8,8 +8,11 @@ namespace Gradebook
 {
     class Gradebook
     {
-     //properties
-     //list/array of sections
+        //properties
+        
+
+        //list/array of sections
+        
      //SectionName - string
 
 
@@ -20,8 +23,15 @@ namespace Gradebook
         // Returns: true if it succeeds false if it fails(no section that matches that name).
         public bool changeSection(string sectionName)
         {
-            Console.WriteLine("Which Section?");
-            
+            int sectionSelectIndex;
+ /*           for (sectionSelectIndex = 0; sectionSelectIndex < ; sectionSelectIndex++)
+            {
+                if (options[optionSelectIndex].Equals(input))
+                {
+                    break;
+                }
+            }
+            */
 
             return false; //FIXME
         }
