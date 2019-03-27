@@ -10,7 +10,7 @@ namespace Gradebook
     {
         string sectionName;
         List<Students> studentList = new List<Students>();
-        int studentLength = studentList.length();
+        
 
     }
 }
