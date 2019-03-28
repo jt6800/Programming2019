@@ -78,7 +78,7 @@ namespace Gradebook
         //returns: True if it succeeds, false if it fails(a student with the same username already exists or there are no sections) 
         public bool addStudent(string firstName, string lastName, string username, long phoneNumber)
         {
-            
+            currentSection.students.Add(new Student(firstName, lastName, username, phoneNumber));
             return false; //FIXME
         }
 
@@ -104,6 +104,7 @@ namespace Gradebook
         //same assignmentName or there are no sections
         public bool addAssignmentToStudent(string username, string assignmentName, int pointsPossible)
         {
+            currentSection.students
             return false; //FIXME
         }
 

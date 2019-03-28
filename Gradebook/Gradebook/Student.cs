@@ -10,18 +10,18 @@ namespace Gradebook
     {
         string firstName = null;
         string lastName = null;
-        long studentID = 0;
+        string username = null;
         long phoneNumber = 0;
         int absentcount = 0;
         int tardyCount = 0;
         double gradePercent = 0;
         //need to add more properties, read through Gradebook API for more
-
-        public Student(string firstName, string lastName, long studentID, long phoneNumber)
+        public List<Assignment> assignments;
+        public Student(string firstName, string lastName, string username, long phoneNumber)
         {
             this.firstName = firstName;
             this.lastName = lastName;
-            this.studentID = studentID;
+            this.username = username;
             this.phoneNumber = phoneNumber;
             List<Assignment> studentAssignments = new List<Assignment>();
         }
