@@ -11,7 +11,7 @@ namespace Gradebook
         string assignmentName;
         double pointsPossible;
         double pointsObtained;
-
+        //likely more properties need to be defined
         public Assignment(string assignmentName, double pointsPossible, double pointsObtained)
         {
             this.assignmentName = assignmentName;

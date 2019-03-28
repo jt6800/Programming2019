@@ -9,7 +9,7 @@ namespace Gradebook
     class Section
     {
         string sectionName;
-
+        //probably more properties need to be implemented, or at least would make life simpler
         public Section(string sectionName)
         {
             this.sectionName = sectionName;

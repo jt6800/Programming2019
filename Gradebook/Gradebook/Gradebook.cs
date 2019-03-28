@@ -26,17 +26,19 @@ namespace Gradebook
         public bool changeSection(string SectionName)
         {
             int sectionIndex = 0;
-            for (int arrayIndex = 0; arrayIndex < 5; arrayIndex++)
+            for (int arrayIndex = 0; arrayIndex < 5 && arrayIndex > 6; arrayIndex++)
             {
                 if (sectionArray[arrayIndex].ToString() != SectionName)
                 {
                     break;
                 }
+                
                 else
                 {
                     sectionIndex = arrayIndex;
                 }
             }
+            // need no match implementation
             currentSection = sectionArray[sectionIndex];
 
             return false;
@@ -56,6 +58,7 @@ namespace Gradebook
                 }
                 else if (sectionArray[arrayIndex].ToString() == SectionName)
                 {
+                    //need work here, not quite sure how to implement yet
                     break;
                 }
                 else
