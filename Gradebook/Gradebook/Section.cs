@@ -9,8 +9,12 @@ namespace Gradebook
     class Section
     {
         string sectionName;
-        List<Students> studentList = new List<Students>();
-        
 
+        public Section(string sectionName)
+        {
+            this.sectionName = sectionName;
+            List<Student> students = new List<Student>();
+            List<Assignment> assignments = new List<Assignment>();
+        }    
     }
 }

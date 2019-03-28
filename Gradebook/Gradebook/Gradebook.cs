@@ -9,10 +9,12 @@ namespace Gradebook
     class Gradebook
     {
         //properties
-        
+        Section currentSection = null;
 
         //list/array of sections
+        Section[] sectionArray = new Section[6] {null, null, null, null, null, null};
         
+
      //SectionName - string
 
 
@@ -21,32 +23,54 @@ namespace Gradebook
         //sets the currently active section - needs to set the currently active section
         //to the section with the given sectionName.
         // Returns: true if it succeeds false if it fails(no section that matches that name).
-        public bool changeSection(string sectionName)
+        public bool changeSection(string SectionName)
         {
-            int sectionSelectIndex;
- /*           for (sectionSelectIndex = 0; sectionSelectIndex < ; sectionSelectIndex++)
+            int sectionIndex = 0;
+            for (int arrayIndex = 0; arrayIndex < 5; arrayIndex++)
             {
-                if (options[optionSelectIndex].Equals(input))
+                if (sectionArray[arrayIndex].ToString() != SectionName)
                 {
                     break;
                 }
+                else
+                {
+                    sectionIndex = arrayIndex;
+                }
             }
-            */
+            currentSection = sectionArray[sectionIndex];
 
-            return false; //FIXME
+            return false;
         }
 
         //creates a new section if there are not already 6 sections
         // and sectionName is not already used , also need to set the currentSection to be the new section
         // Returns: true if it succeeds false if it fails.
-        public bool addSection(string sectionName)
+        public bool addSection(string SectionName)
         {
+            int availableArray = 0;
+            for (int arrayIndex = 0; arrayIndex < 5; arrayIndex++)
+            {
+                if (sectionArray == null)
+                {
+                    break;
+                }
+                else if (sectionArray[arrayIndex].ToString() == SectionName)
+                {
+                    break;
+                }
+                else
+                {
+                    availableArray = arrayIndex;
+                }
+            }
+            sectionArray[availableArray] = new Section(SectionName);
             return false; //FIXME
         }
         //Creates a new student and adds the student to the currently active section
         //returns: True if it succeeds, false if it fails(a student with the same username already exists or there are no sections) 
         public bool addStudent(string firstName, string lastName, string username, long phoneNumber)
         {
+            
             return false; //FIXME
         }
 
