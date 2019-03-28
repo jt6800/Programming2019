@@ -12,7 +12,10 @@ namespace Gradebook
         Section currentSection = null;
 
         //list/array of sections
-        Section[] sectionArray = new Section[6] {null, null, null, null, null, null};
+        //set up sectionArray
+        List<Section> sectionList = new List<Section>();
+
+        
         
 
      //SectionName - string
@@ -26,20 +29,20 @@ namespace Gradebook
         public bool changeSection(string SectionName)
         {
             int sectionIndex = 0;
-            for (int arrayIndex = 0; arrayIndex < 5 && arrayIndex > 6; arrayIndex++)
+            for (int listIndex = 0; listIndex < 5 && listIndex > 6; listIndex++)
             {
-                if (sectionArray[arrayIndex].ToString() != SectionName)
+                if (sectionList[listIndex].ToString() != SectionName)
                 {
                     break;
                 }
                 
                 else
                 {
-                    sectionIndex = arrayIndex;
+                    sectionIndex = listIndex;
                 }
             }
             // need no match implementation
-            currentSection = sectionArray[sectionIndex];
+            currentSection = sectionList[sectionIndex];
 
             return false;
         }
@@ -52,11 +55,11 @@ namespace Gradebook
             int availableArray = 0;
             for (int arrayIndex = 0; arrayIndex < 5; arrayIndex++)
             {
-                if (sectionArray == null)
+                if (sectionList == null)
                 {
                     break;
                 }
-                else if (sectionArray[arrayIndex].ToString() == SectionName)
+                else if (sectionList[arrayIndex].ToString() == SectionName)
                 {
                     //need work here, not quite sure how to implement yet
                     break;
@@ -66,8 +69,10 @@ namespace Gradebook
                     availableArray = arrayIndex;
                 }
             }
-            sectionArray[availableArray] = new Section(SectionName);
-            return false; //FIXME
+            sectionList[availableArray] = new Section(SectionName);
+            changeSection(SectionName);
+
+            return true; //FIXME
         }
         //Creates a new student and adds the student to the currently active section
         //returns: True if it succeeds, false if it fails(a student with the same username already exists or there are no sections) 
