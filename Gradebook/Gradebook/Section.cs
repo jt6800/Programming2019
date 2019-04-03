@@ -10,14 +10,13 @@ namespace Gradebook
     {
         string sectionName;
         //probably more properties need to be implemented, or at least would make life simpler
-        public List<Student> students;
-        public List<Assignment> assignments;
+        private List<Student> students;
+       
 
         public Section(string sectionName)
         {
             this.sectionName = sectionName;
             List<Student> students = new List<Student>();
-            List<Assignment> assignments = new List<Assignment>();
         }    
     }
 }
