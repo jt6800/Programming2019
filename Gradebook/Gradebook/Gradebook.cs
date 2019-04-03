@@ -9,7 +9,7 @@ namespace Gradebook
     class Gradebook
     {
         //properties
-        Section currentSection = null;
+        string currentSectionName = null;
 
         //list/array of sections
         //set up sectionArray
@@ -42,7 +42,6 @@ namespace Gradebook
                 }
             }
             // need no match implementation
-            currentSection = sectionList[sectionIndex];
 
             return false;
         }
@@ -52,25 +51,30 @@ namespace Gradebook
         // Returns: true if it succeeds false if it fails.
         public bool addSection(string SectionName)
         {
-            int availableArray = 0;
             for (int arrayIndex = 0; arrayIndex < 5; arrayIndex++)
             {
-                if (sectionList == null)
+                //return false if already 6 sections
+                //return false in section name is in use
+                //otherwise
+                    //create new section, add it to sections
+                    //set currentsection to new section
+                    //return true
+                    
+                if (sectionList.Count >= 6)
                 {
-                    break;
+                    return false;
                 }
-                else if (sectionList[arrayIndex].ToString() == SectionName)
+                int sectionIndex = getSectionIndexBySectionName(SectionName);
+                if (sectionIndex != -1)
                 {
-                    //need work here, not quite sure how to implement yet
-                    break;
+                    sectionList.Add(new Section(SectionName));
+                    return true;
                 }
-                else
-                {
-                    availableArray = arrayIndex;
-                }
+
+                
             }
-            sectionList[availableArray] = new Section(SectionName);
-            changeSection(SectionName);
+            currentSectionName = SectionName;
+
 
             return true; //FIXME
         }
@@ -78,7 +82,7 @@ namespace Gradebook
         //returns: True if it succeeds, false if it fails(a student with the same username already exists or there are no sections) 
         public bool addStudent(string firstName, string lastName, string username, long phoneNumber)
         {
-            currentSection.students.Add(new Student(firstName, lastName, username, phoneNumber));
+            //currentSection.students.Add(new Student(firstName, lastName, username, phoneNumber));
             return false; //FIXME
         }
 
@@ -104,7 +108,7 @@ namespace Gradebook
         //same assignmentName or there are no sections
         public bool addAssignmentToStudent(string username, string assignmentName, int pointsPossible)
         {
-            currentSection.students
+            //currentSection.students
             return false; //FIXME
         }
 
@@ -163,6 +167,22 @@ namespace Gradebook
         public int getAbsentCount(string username)
         {
             return -1; //FIXME
+        }
+
+        //returns -1 if no section was found with the given section
+        //otherwise returns the index of the sextion with the matching name
+        private int getSectionIndexBySectionName(string sectionName)
+        {
+            int index = 0; // |  |  |  |
+            while (index < sectionList.Count)
+            {
+                if (sectionName.Equals(sectionList[index].getSectionName()))
+                {
+                    return index;
+                }
+                index++;
+            }
+            return -1;
         }
     }
 }

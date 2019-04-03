@@ -8,9 +8,9 @@ namespace Gradebook
 {
     class Assignment
     {
-        string assignmentName;
-        double pointsPossible;
-        double pointsObtained;
+        private string assignmentName;
+        private double pointsPossible;
+        private double pointsObtained;
         //likely more properties need to be defined
 
         public Assignment(string assignmentName, double pointsPossible, double pointsObtained)

@@ -8,15 +8,19 @@ namespace Gradebook
 {
     class Section
     {
-        string sectionName;
+        private string sectionName;
         //probably more properties need to be implemented, or at least would make life simpler
         private List<Student> students;
-       
 
         public Section(string sectionName)
         {
             this.sectionName = sectionName;
-            List<Student> students = new List<Student>();
-        }    
+            this.students = students;
+        }
+
+        public string getSectionName()
+        {
+            return sectionName;
+        }
     }
 }
