@@ -22,5 +22,38 @@ namespace Gradebook
         {
             return sectionName;
         }
+
+        public bool addStudent(string firstName, string lastName, string username, long phoneNumber)
+        {
+            //create new student if username doesn't exit and add to studentList
+            //returns false of username exists
+            //returns true otherwise
+
+            //checks if username exists
+            //if exists return false
+            //otherwise create student, add to list, return true
+
+            
+            int index = getStudentIndexByUsername(username);
+            if (index != -1)
+            {
+                 return false;
+            }
+
+            students.Add(new Student(firstName, lastName, username, phoneNumber);          
+        }
+        private int getStudentIndexByUsername(string username)
+        {
+            int index = 0; // |  |  |  |
+            while (index < students.Count)
+            {
+                if (username.Equals(students[index].getUsername))
+                {
+                    return index;
+                }
+                index++;
+            }
+            return -1;
+        }
     }
 }

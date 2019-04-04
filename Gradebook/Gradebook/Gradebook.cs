@@ -82,8 +82,21 @@ namespace Gradebook
         //returns: True if it succeeds, false if it fails(a student with the same username already exists or there are no sections) 
         public bool addStudent(string firstName, string lastName, string username, long phoneNumber)
         {
-            //currentSection.students.Add(new Student(firstName, lastName, username, phoneNumber));
-            return false; //FIXME
+            //if no sections return false
+            
+            if (sectionList.Count == 0)
+            {
+                return false;
+            }
+            if (currentSectionName==null)
+            {
+                return false;
+            }
+            //get current section
+
+            Section curSection = getCurrentSection();
+            return curSection.addStudent(firstName, lastName, username, phoneNumber);
+            
         }
 
         //returns overall score (total points earned for all assignments/ total points possible) as a percentage for specified student
@@ -183,6 +196,23 @@ namespace Gradebook
                 index++;
             }
             return -1;
+        }
+
+        private Section getCurrentSection()
+        {
+            //return section if there are any sections
+            // return null if no current section
+            //get sectionIndexBySectionName
+            //if index == -1 return null
+            //otherwise return section at index
+
+            int index = getSectionIndexBySectionName(currentSectionName);
+            if (index == -1)
+            {
+                return null;
+            }
+
+            return sectionList[index];
         }
     }
 }
