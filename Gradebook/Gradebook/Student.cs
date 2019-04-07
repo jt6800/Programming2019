@@ -16,7 +16,7 @@ namespace Gradebook
         int tardyCount = 0;
         double gradePercent = 0;
         //need to add more properties, read through Gradebook API for more
-        public List<Assignment> assignments;
+        private List<Assignment> assignments;
         public Student(string firstName, string lastName, string username, long phoneNumber)
         {
             this.firstName = firstName;
@@ -25,5 +25,11 @@ namespace Gradebook
             this.phoneNumber = phoneNumber;
             List<Assignment> studentAssignments = new List<Assignment>();
         }
+
+        public string getUsername(int index)
+        {
+            return username;
+        }
+
     }
 }

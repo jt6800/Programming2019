@@ -160,7 +160,14 @@ namespace Gradebook
         //returns: true if successful, false if the student was not found in the current section  or there are no sections
         public bool markTardy(string username)
         {
-            return false;//FIXME
+            //return false if no sections
+            if (getCurrentSection() == null)
+            {
+                return false;
+            }
+            //return false if no student found
+
+            //return true if successful
         }
 
         //adds 1 to the specified student's absent count.
@@ -214,5 +221,7 @@ namespace Gradebook
 
             return sectionList[index];
         }
+
+        
     }
 }

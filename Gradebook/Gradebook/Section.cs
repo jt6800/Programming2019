@@ -42,6 +42,8 @@ namespace Gradebook
 
             students.Add(new Student(firstName, lastName, username, phoneNumber);          
         }
+
+        
         private int getStudentIndexByUsername(string username)
         {
             int index = 0; // |  |  |  |
