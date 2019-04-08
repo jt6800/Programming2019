@@ -161,12 +161,17 @@ namespace Gradebook
         public bool markTardy(string username)
         {
             //return false if no sections
-            if (getCurrentSection() == null)
+            if (sectionList.Count == 0)
             {
                 return false;
             }
-            //return false if no student found
 
+            Section currentSection = getCurrentSection();
+            //return false if no student found
+            for (int index = 0; index < currentSection.getStudentCountBySection(); index++)
+            {
+
+            }
             //return true if successful
         }
 

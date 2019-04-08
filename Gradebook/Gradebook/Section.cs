@@ -57,5 +57,10 @@ namespace Gradebook
             }
             return -1;
         }
+
+        public int getStudentCountBySection()
+        {
+            return students.Count;
+        }
     }
 }
