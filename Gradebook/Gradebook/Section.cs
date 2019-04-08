@@ -39,8 +39,8 @@ namespace Gradebook
             {
                  return false;
             }
-
-            students.Add(new Student(firstName, lastName, username, phoneNumber);          
+            students.Add(new Student(firstName, lastName, username, phoneNumber);
+            return true;
         }
 
         
@@ -49,7 +49,7 @@ namespace Gradebook
             int index = 0; // |  |  |  |
             while (index < students.Count)
             {
-                if (username.Equals(students[index].getUsername))
+                if (username.Equals(students[index].getUsername()))
                 {
                     return index;
                 }

@@ -26,7 +26,7 @@ namespace Gradebook
             List<Assignment> studentAssignments = new List<Assignment>();
         }
 
-        public string getUsername(int index)
+        public string getUsername()
         {
             return username;
         }
