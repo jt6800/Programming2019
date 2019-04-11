@@ -121,7 +121,8 @@ namespace Gradebook
         //same assignmentName or there are no sections
         public bool addAssignmentToStudent(string username, string assignmentName, int pointsPossible)
         {
-            //currentSection.students
+            int index = getSectionIndexBySectionName(currentSectionName);
+            sectionList[index].addAssignment(username, assignmentName, pointsPossible);
             return false; //FIXME
         }
 
@@ -167,11 +168,9 @@ namespace Gradebook
             }
 
             Section currentSection = getCurrentSection();
+            return true;
             //return false if no student found
-            for (int index = 0; index < currentSection.getStudentCountBySection(); index++)
-            {
-
-            }
+            
             //return true if successful
         }
 
@@ -185,13 +184,18 @@ namespace Gradebook
         //returns the student tardy count for the specified student, it returns -1 if the student was not found  or there are no sections
         public int getTardyCount(string username)
         {
-            return -1; //FIXME
+            int index = getSectionIndexBySectionName(currentSectionName);
+            int tardyCount = sectionList[index].returnTardyCount(username);
+            return tardyCount;
+
         }
 
         //returns the student tardy count for the specified student, it returns -1 if the student was not found  or there are no sections
         public int getAbsentCount(string username)
         {
-            return -1; //FIXME
+            int index = getSectionIndexBySectionName(currentSectionName);
+            int absentCount = sectionList[index].returnAbsentCount(username);
+            return absentCount;
         }
 
         //returns -1 if no section was found with the given section

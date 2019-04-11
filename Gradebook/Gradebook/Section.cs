@@ -39,12 +39,12 @@ namespace Gradebook
             {
                  return false;
             }
-            students.Add(new Student(firstName, lastName, username, phoneNumber);
+            students.Add(new Student(firstName, lastName, username, phoneNumber));
             return true;
         }
 
         
-        private int getStudentIndexByUsername(string username)
+        public int getStudentIndexByUsername(string username)
         {
             int index = 0; // |  |  |  |
             while (index < students.Count)
@@ -61,6 +61,29 @@ namespace Gradebook
         public int getStudentCountBySection()
         {
             return students.Count;
+        }
+
+        public bool markTardy(string username)
+        {
+            int index = getStudentIndexByUsername(username);
+            students[index].markTardy();
+            return true;
+        }
+        public bool addAssignment(string username, string assignmentName, int pointsPossible)
+        {
+            int index = getStudentIndexByUsername(username);
+            students[index].addAssignment(assignmentName, pointsPossible);
+            return true;
+        }
+        public int returnAbsentCount(string username)
+        {
+            int index = getStudentIndexByUsername(username);
+            return students[index].returnAbsentCount();
+        }
+        public int returnTardyCount(string username)
+        {
+            int index = getStudentIndexByUsername(username);
+            return students[index].returnTardyCount();
         }
     }
 }
