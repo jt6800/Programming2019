@@ -65,8 +65,24 @@ namespace Gradebook
 
         public bool markTardy(string username)
         {
+
             int index = getStudentIndexByUsername(username);
+            if (index == -1)
+            {
+                return false;
+            }
             students[index].markTardy();
+            return true;
+        }
+        public bool markAbsent(string username)
+        {
+
+            int index = getStudentIndexByUsername(username);
+            if (index == -1)
+            {
+                return false;
+            }
+            students[index].markAbsent();
             return true;
         }
         public bool addAssignment(string username, string assignmentName, int pointsPossible)

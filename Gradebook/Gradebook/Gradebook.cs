@@ -168,6 +168,7 @@ namespace Gradebook
             }
 
             Section currentSection = getCurrentSection();
+            currentSection.markTardy(username);
             return true;
             //return false if no student found
             
@@ -178,7 +179,14 @@ namespace Gradebook
         //returns: true if successful, false if the student was not found in the current section  or there are no sections
         public bool markAbsent(string username)
         {
-            return false; //FIXME
+            if (sectionList.Count == 0)
+            {
+                return false;
+            }
+
+            Section currentSection = getCurrentSection();
+            currentSection.markAbsent(username);
+            return true;
         }
 
         //returns the student tardy count for the specified student, it returns -1 if the student was not found  or there are no sections

@@ -37,6 +37,12 @@ namespace Gradebook
             return true;
         }
 
+        public bool markAbsent()
+        {
+            absentCount++;
+            return true;
+        }
+
         public bool addAssignment(string assignmentName, int pointsPossible)
         {
             assignments.Add(new Assignment(assignmentName, pointsPossible, 0));
