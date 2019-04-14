@@ -1,0 +1,7 @@
+C:\Users\Owner\Documents\GitHub\Programming2019\BegArrays\BegArrays\bin\Debug\BegArrays.exe.config
+C:\Users\Owner\Documents\GitHub\Programming2019\BegArrays\BegArrays\bin\Debug\BegArrays.exe
+C:\Users\Owner\Documents\GitHub\Programming2019\BegArrays\BegArrays\bin\Debug\BegArrays.pdb
+C:\Users\Owner\Documents\GitHub\Programming2019\BegArrays\BegArrays\obj\Debug\BegArrays.csprojAssemblyReference.cache
+C:\Users\Owner\Documents\GitHub\Programming2019\BegArrays\BegArrays\obj\Debug\BegArrays.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Documents\GitHub\Programming2019\BegArrays\BegArrays\obj\Debug\BegArrays.exe
+C:\Users\Owner\Documents\GitHub\Programming2019\BegArrays\BegArrays\obj\Debug\BegArrays.pdb

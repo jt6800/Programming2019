@@ -1,0 +1,7 @@
+C:\Users\Owner\Documents\GitHub\Programming2019\AdvArraysList2\AdvArraysList2\obj\Debug\AdvArraysList2.csprojAssemblyReference.cache
+C:\Users\Owner\Documents\GitHub\Programming2019\AdvArraysList2\AdvArraysList2\obj\Debug\AdvArraysList2.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Documents\GitHub\Programming2019\AdvArraysList2\AdvArraysList2\bin\Debug\AdvArraysList2.exe.config
+C:\Users\Owner\Documents\GitHub\Programming2019\AdvArraysList2\AdvArraysList2\bin\Debug\AdvArraysList2.exe
+C:\Users\Owner\Documents\GitHub\Programming2019\AdvArraysList2\AdvArraysList2\bin\Debug\AdvArraysList2.pdb
+C:\Users\Owner\Documents\GitHub\Programming2019\AdvArraysList2\AdvArraysList2\obj\Debug\AdvArraysList2.exe
+C:\Users\Owner\Documents\GitHub\Programming2019\AdvArraysList2\AdvArraysList2\obj\Debug\AdvArraysList2.pdb
