@@ -13,11 +13,27 @@ namespace Gradebook
         private double pointsObtained;
         //likely more properties need to be defined
 
-        public Assignment(string assignmentName, double pointsPossible, double pointsObtained)
+        public Assignment(string assignmentName, double pointsPossible)
         {
             this.assignmentName = assignmentName;
             this.pointsPossible = pointsPossible;
-            this.pointsObtained = pointsObtained;
+        }
+
+        public string getAssignmentName()
+        {
+            return assignmentName;
+        }
+
+        public bool setScore(int pointsEarned)
+        {
+            pointsObtained = pointsEarned;
+            return true;
+        }
+
+        public double returnScore()
+        {
+            double score = (pointsObtained / pointsPossible)*100;
+            return score;
         }
     }
 }

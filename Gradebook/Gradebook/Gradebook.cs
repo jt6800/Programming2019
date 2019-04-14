@@ -123,7 +123,7 @@ namespace Gradebook
         {
             int index = getSectionIndexBySectionName(currentSectionName);
             sectionList[index].addAssignment(username, assignmentName, pointsPossible);
-            return false; //FIXME
+            return true; //FIXME
         }
 
         //checks to make sure no student already has an assignment with the same assignment name first
@@ -139,14 +139,18 @@ namespace Gradebook
         //returns: true if successful, false if the student is not found or the assignmentName is not found  or there are no sections.
         public bool setScore(string username, string assignmentName, int pointsEarned)
         {
-            return false;//FIXME
+            int index = getSectionIndexBySectionName(currentSectionName);
+            sectionList[index].setScore(username, assignmentName, pointsEarned);
+            return true;
         }
 
         //returns score on assignment specified as a percentage for the specified student in the current section
         //returns -1 if the student was not found or the student did not have an assignment with the specified assignment name or there are no sections
         public double getAssignmentScorePercent(string username, string assignmentName)
         {
-            return -1;//FIXME
+            int index = getSectionIndexBySectionName(currentSectionName);
+            double score = sectionList[index].returnScore(username, assignmentName);
+            return score;
         }
 
         //returns the average score as a percentage for the current section.
@@ -154,7 +158,9 @@ namespace Gradebook
         //returns -1 if no student had an assignment with the specified assignment name  or there are no sections
         public double getAssignmentScoreAvg(string assignmentName)
         {
-            return -1;//FIXME
+            int index = getSectionIndexBySectionName(currentSectionName);
+            double score = sectionList[index].returnScoreSection(assignmentName);
+            return score;
         }
 
         //adds 1 to the specified student's tardy count.

@@ -45,7 +45,7 @@ namespace Gradebook
 
         public bool addAssignment(string assignmentName, int pointsPossible)
         {
-            assignments.Add(new Assignment(assignmentName, pointsPossible, 0));
+            assignments.Add(new Assignment(assignmentName, pointsPossible));
             return true;
         }
 
@@ -56,6 +56,33 @@ namespace Gradebook
         public int returnTardyCount()
         {
             return tardyCount;
+        }
+
+        public bool setScore(string assignmentName, int pointsEarned)
+        {
+            for (int i = 0; i < assignments.Count; i++)
+            {
+                if (assignments[i].getAssignmentName()==assignmentName)
+                {
+                    assignments[i].setScore(pointsEarned);
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public double returnScore(string assignmentName)
+        {
+            for (int i = 0; i < assignments.Count; i++)
+            {
+                if (assignments[i].getAssignmentName() == assignmentName)
+                {
+                    double score = assignments[i].returnScore();
+                    return score;
+                }
+                
+            }
+            return 0;
         }
     }
 }

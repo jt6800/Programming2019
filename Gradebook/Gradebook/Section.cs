@@ -101,5 +101,44 @@ namespace Gradebook
             int index = getStudentIndexByUsername(username);
             return students[index].returnTardyCount();
         }
+
+        public bool setScore(string username, string assignmentName, int pointsEarned)
+        {
+            for (int i = 0; i < students.Count; i++)
+            {
+                if (students[i].getUsername() == username)
+                {
+                    students[i].setScore(assignmentName, pointsEarned);
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public double returnScore(string username, string assignmentName)
+        {
+            for (int i = 0; i < students.Count; i++)
+            {
+                if (students[i].getUsername() == username)
+                {
+                    double score = students[i].returnScore(assignmentName);
+                    return score;
+                }
+            }
+            return 0;
+        }
+
+        public double returnScoreSection(string assignmentName)
+        {
+            double runningTotal = 0;
+            double divisor = students.Count();
+            double scoreSection = 0;
+            for (int i = 0; i < students.Count; i++)
+            {
+                runningTotal = runningTotal + (students[i].returnScore(assignmentName));
+            }
+            scoreSection = runningTotal / divisor;
+            return scoreSection;
+        }
     }
 }
