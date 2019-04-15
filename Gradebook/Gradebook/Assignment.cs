@@ -18,18 +18,15 @@ namespace Gradebook
             this.assignmentName = assignmentName;
             this.pointsPossible = pointsPossible;
         }
-
         public string getAssignmentName()
         {
             return assignmentName;
         }
-
         public bool setScore(int pointsEarned)
         {
             pointsObtained = pointsEarned;
             return true;
         }
-
         public double returnScore()
         {
             double score = (pointsObtained / pointsPossible)*100;

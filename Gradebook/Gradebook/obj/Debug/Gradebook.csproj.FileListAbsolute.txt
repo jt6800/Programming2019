@@ -5,3 +5,11 @@ C:\Users\Owner\Documents\GitHub\Programming2019\Gradebook\Gradebook\bin\Debug\Gr
 C:\Users\Owner\Documents\GitHub\Programming2019\Gradebook\Gradebook\bin\Debug\Gradebook.pdb
 C:\Users\Owner\Documents\GitHub\Programming2019\Gradebook\Gradebook\obj\Debug\Gradebook.exe
 C:\Users\Owner\Documents\GitHub\Programming2019\Gradebook\Gradebook\obj\Debug\Gradebook.pdb
+C:\Users\jt6800\Documents\GitHub\Programming2019\Gradebook\Gradebook\bin\Debug\Gradebook.exe.config
+C:\Users\jt6800\Documents\GitHub\Programming2019\Gradebook\Gradebook\bin\Debug\Gradebook.exe
+C:\Users\jt6800\Documents\GitHub\Programming2019\Gradebook\Gradebook\bin\Debug\Gradebook.pdb
+C:\Users\jt6800\Documents\GitHub\Programming2019\Gradebook\Gradebook\bin\Debug\Gradebook.exe.CodeAnalysisLog.xml
+C:\Users\jt6800\Documents\GitHub\Programming2019\Gradebook\Gradebook\bin\Debug\Gradebook.exe.lastcodeanalysissucceeded
+C:\Users\jt6800\Documents\GitHub\Programming2019\Gradebook\Gradebook\obj\Debug\Gradebook.csprojResolveAssemblyReference.cache
+C:\Users\jt6800\Documents\GitHub\Programming2019\Gradebook\Gradebook\obj\Debug\Gradebook.exe
+C:\Users\jt6800\Documents\GitHub\Programming2019\Gradebook\Gradebook\obj\Debug\Gradebook.pdb

@@ -17,12 +17,10 @@ namespace Gradebook
             this.sectionName = sectionName;
             this.students = students;
         }
-
         public string getSectionName()
         {
             return sectionName;
         }
-
         public bool addStudent(string firstName, string lastName, string username, long phoneNumber)
         {
             //create new student if username doesn't exit and add to studentList
@@ -31,19 +29,15 @@ namespace Gradebook
 
             //checks if username exists
             //if exists return false
-            //otherwise create student, add to list, return true
-
-            
+            //otherwise create student, add to list, return true            
             int index = getStudentIndexByUsername(username);
             if (index != -1)
             {
-                 return false;
+                return false;
             }
             students.Add(new Student(firstName, lastName, username, phoneNumber));
             return true;
-        }
-
-        
+        }        
         public int getStudentIndexByUsername(string username)
         {
             int index = 0; // |  |  |  |
@@ -57,12 +51,10 @@ namespace Gradebook
             }
             return -1;
         }
-
         public int getStudentCountBySection()
         {
             return students.Count;
         }
-
         public bool markTardy(string username)
         {
 
@@ -101,7 +93,6 @@ namespace Gradebook
             int index = getStudentIndexByUsername(username);
             return students[index].returnTardyCount();
         }
-
         public bool setScore(string username, string assignmentName, int pointsEarned)
         {
             for (int i = 0; i < students.Count; i++)
@@ -114,7 +105,6 @@ namespace Gradebook
             }
             return false;
         }
-
         public double returnScore(string username, string assignmentName)
         {
             for (int i = 0; i < students.Count; i++)
@@ -127,7 +117,6 @@ namespace Gradebook
             }
             return 0;
         }
-
         public double returnScoreSection(string assignmentName)
         {
             double runningTotal = 0;
