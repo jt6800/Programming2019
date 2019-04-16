@@ -79,8 +79,25 @@ namespace Gradebook
         }
         public bool addAssignment(string username, string assignmentName, int pointsPossible)
         {
+            
             int index = getStudentIndexByUsername(username);
+            if (students[index].checkDuplicateAssignment(assignmentName) == false)
+            {
+                return false;
+            } 
             students[index].addAssignment(assignmentName, pointsPossible);
+            return true;
+        }
+
+        public bool addAssignmentToSection(string assignmentName, int pointsPossible)
+        {
+            for (int i = 0; i < students.Count(); i++)
+            {
+                if (students[i].checkDuplicateAssignment(assignmentName) == false)
+                {
+                    students[i].addAssignment(assignmentName, pointsPossible);
+                }               
+            }
             return true;
         }
         public int returnAbsentCount(string username)
@@ -145,17 +162,18 @@ namespace Gradebook
 
         public double getOverallScoreAvg()
         {
-            if (students.Count() == 0)
-            {
-                return -1;
-            }
             double runningTotalAverages = 0;
             double divisor = students.Count();
-            for (int i = 0; i < students.Count; i++)
-            {                
-                runningTotalAverages = runningTotalAverages + students[i].getOverallScore();
+            if (students.Count() != 0)
+            {
+                for (int i = 0; i < students.Count; i++)
+                {
+                    runningTotalAverages = runningTotalAverages + students[i].getOverallScore();
+                }
+                double overallScoreAvg = runningTotalAverages / divisor;
+                return overallScoreAvg;
             }
-            
+            return -1;            
         }
     }
 }

@@ -96,5 +96,17 @@ namespace Gradebook
             }
             return runningTotalObtained/runningTotalPossible;
         }
+
+        public bool checkDuplicateAssignment(string assignmentName)
+        {
+            for (int i = 0; i < assignments.Count(); i++)
+            {
+                if (assignmentName == assignments[i].getAssignmentName())
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }

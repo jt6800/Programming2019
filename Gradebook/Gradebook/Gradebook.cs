@@ -118,7 +118,8 @@ namespace Gradebook
         public double getOverallScoreAvg()
         {
             Section currentSection = getCurrentSection();
-            currentSection.getOverallScoreAvg();
+            return currentSection.getOverallScoreAvg();
+
         }
 
 
@@ -138,7 +139,13 @@ namespace Gradebook
         //returns: True if successful and false if at least one student has the same assignment name or there are no sections
         public bool addAssignmentToSection(string assignmentName, int pointsPossible)
         {
-            return false;//FIXME
+            if (getCurrentSection()==null)
+            {
+                return false;
+            }
+            Section currentSection = getCurrentSection();
+            currentSection.addAssignmentToSection(assignmentName, pointsPossible);
+            return true;
         }
 
         //sets the pointsEarned property for the student specified in the current section for the assignment specified
