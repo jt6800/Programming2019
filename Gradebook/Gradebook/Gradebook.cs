@@ -103,7 +103,12 @@ namespace Gradebook
         //returns -1 if the student was not found or if the student did not have any assignments assigned or there are no sections.
         public double getOverallScore(string username)
         {
-            return -1; //FIXME
+            Section currentSection = getCurrentSection();
+            if (currentSection.getOverallScore(username)!= -1)
+            {
+                return currentSection.getOverallScore(username);
+            }
+            return -1;
         }
         //returns overall score as a percentage for the current section - (the average of each students overall score.)
         //Each student should have the same weight even if they have different number of points possible
@@ -112,7 +117,8 @@ namespace Gradebook
         //returns -1 if there were no assignments in the section or there are no sections.
         public double getOverallScoreAvg()
         {
-            return -1; //FIXME
+            Section currentSection = getCurrentSection();
+            currentSection.getOverallScoreAvg();
         }
 
 

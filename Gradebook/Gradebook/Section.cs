@@ -129,5 +129,33 @@ namespace Gradebook
             scoreSection = runningTotal / divisor;
             return scoreSection;
         }
+
+        public double getOverallScore(string username)
+        {
+            for (int i = 0; i < students.Count; i++)
+            {
+                if (students[i].getUsername() == username)
+                {
+                    double scoreAvg = students[i].getOverallScore();
+                    return scoreAvg;
+                }
+            }
+            return -1;
+        }
+
+        public double getOverallScoreAvg()
+        {
+            if (students.Count() == 0)
+            {
+                return -1;
+            }
+            double runningTotalAverages = 0;
+            double divisor = students.Count();
+            for (int i = 0; i < students.Count; i++)
+            {                
+                runningTotalAverages = runningTotalAverages + students[i].getOverallScore();
+            }
+            
+        }
     }
 }

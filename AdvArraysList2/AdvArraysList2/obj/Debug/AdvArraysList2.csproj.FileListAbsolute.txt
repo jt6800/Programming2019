@@ -5,3 +5,9 @@ C:\Users\Owner\Documents\GitHub\Programming2019\AdvArraysList2\AdvArraysList2\bi
 C:\Users\Owner\Documents\GitHub\Programming2019\AdvArraysList2\AdvArraysList2\bin\Debug\AdvArraysList2.pdb
 C:\Users\Owner\Documents\GitHub\Programming2019\AdvArraysList2\AdvArraysList2\obj\Debug\AdvArraysList2.exe
 C:\Users\Owner\Documents\GitHub\Programming2019\AdvArraysList2\AdvArraysList2\obj\Debug\AdvArraysList2.pdb
+C:\Users\jt6800\Documents\GitHub\Programming2019\AdvArraysList2\AdvArraysList2\bin\Debug\AdvArraysList2.exe.config
+C:\Users\jt6800\Documents\GitHub\Programming2019\AdvArraysList2\AdvArraysList2\bin\Debug\AdvArraysList2.exe
+C:\Users\jt6800\Documents\GitHub\Programming2019\AdvArraysList2\AdvArraysList2\bin\Debug\AdvArraysList2.pdb
+C:\Users\jt6800\Documents\GitHub\Programming2019\AdvArraysList2\AdvArraysList2\obj\Debug\AdvArraysList2.csprojResolveAssemblyReference.cache
+C:\Users\jt6800\Documents\GitHub\Programming2019\AdvArraysList2\AdvArraysList2\obj\Debug\AdvArraysList2.exe
+C:\Users\jt6800\Documents\GitHub\Programming2019\AdvArraysList2\AdvArraysList2\obj\Debug\AdvArraysList2.pdb

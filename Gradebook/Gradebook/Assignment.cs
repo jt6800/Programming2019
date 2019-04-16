@@ -32,5 +32,15 @@ namespace Gradebook
             double score = (pointsObtained / pointsPossible)*100;
             return score;
         }
+
+        public double returnPossible()
+        {
+            return pointsPossible;
+        }
+
+        public double returnObtained()
+        {
+            return pointsObtained;
+        }
     }
 }

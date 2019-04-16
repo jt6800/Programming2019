@@ -84,5 +84,17 @@ namespace Gradebook
             }
             return 0;
         }
+
+        public double getOverallScore()
+        {
+            double runningTotalObtained = 0;
+            double runningTotalPossible = 0;
+            for (int i = 0; i < assignments.Count; i++)
+            {
+                runningTotalObtained = runningTotalObtained + assignments[i].returnObtained();
+                runningTotalPossible = runningTotalPossible + assignments[i].returnPossible();
+            }
+            return runningTotalObtained/runningTotalPossible;
+        }
     }
 }

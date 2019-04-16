@@ -11,23 +11,19 @@ namespace AdvArraysList2
         static void Main(string[] args)
         {
             //declaration of lists for user info (global)
-            
-            List<string> userName = new List<string>();
-            List<string> password = new List<string>();
+
+             List<string> userName = new List<string>();
+             List<string> password = new List<string>();
 
             //main menu
             Console.WriteLine("Would you like to (create account) or (login)?");
             if (Console.ReadLine() == "create account")
             {
-                Console.Write("Enter Username:");
-                userName.Add(Console.ReadLine());
-                Console.Write("Enter password:");
-                password.Add(Console.ReadLine());
-
+                addUser();
             }
             else if (Console.ReadLine() == "login")
             {
-                while (1 == 1){
+                while (1 == 1) {
 
                     Console.Write("Enter Username:");
                     string unCheck = Console.ReadLine();
@@ -54,10 +50,32 @@ namespace AdvArraysList2
             {
                 Console.WriteLine("Invalid choice, please try again.");
             }
-            }
+
             
         }
+        public static void addUser()
+        {
+            int validUsername = 0;
+            while (validUsername == 0)
+            {
+                Console.Write("Enter Username:");
+                userName.Add(Console.ReadLine());
+                for (int i = 0; i < userName.Count(); i++)
+                {
+                    if (userName[i] == userName[userName.Count()])
+                    {
+                        Console.WriteLine("Username already in use, please use a different username");
+                        i = userName.Count();
+                    }
+                }
+            }
+
+            Console.Write("Enter password:");
+            password.Add(Console.ReadLine());
+        }
+    }
+
 
         
-    }
+}
 
