@@ -56,8 +56,7 @@ namespace AdvArraysList2
         public static void addUser()
         {
             int validUsername = 0;
-            while (validUsername == 0)
-            {
+            
                 Console.Write("Enter Username:");
                 userName.Add(Console.ReadLine());
                 for (int i = 0; i < userName.Count(); i++)
@@ -68,7 +67,7 @@ namespace AdvArraysList2
                         i = userName.Count();
                     }
                 }
-            }
+            
 
             Console.Write("Enter password:");
             password.Add(Console.ReadLine());
