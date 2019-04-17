@@ -128,8 +128,8 @@ namespace Gradebook
         //same assignmentName or there are no sections
         public bool addAssignmentToStudent(string username, string assignmentName, int pointsPossible)
         {
-            int index = getSectionIndexBySectionName(currentSectionName);
-            sectionList[index].addAssignment(username, assignmentName, pointsPossible);
+            Section currentSection = getCurrentSection();
+            currentSection.addAssignment(username, assignmentName, pointsPossible);
             return true; //FIXME
         }
 
