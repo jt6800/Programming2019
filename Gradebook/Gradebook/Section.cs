@@ -81,6 +81,10 @@ namespace Gradebook
         {
             
             int index = getStudentIndexByUsername(username);
+            if (index == -1)
+            {
+                return false;
+            }
             if (students[index].checkDuplicateAssignment(assignmentName) == false)
             {
                 return false;
@@ -103,11 +107,19 @@ namespace Gradebook
         public int returnAbsentCount(string username)
         {
             int index = getStudentIndexByUsername(username);
+            if (index == -1)
+            {
+                return 0;
+            }
             return students[index].returnAbsentCount();
         }
         public int returnTardyCount(string username)
         {
             int index = getStudentIndexByUsername(username);
+            if (index == -1)
+            {
+                return 0;
+            }
             return students[index].returnTardyCount();
         }
         public bool setScore(string username, string assignmentName, int pointsEarned)

@@ -13,9 +13,9 @@ namespace Gradebook
 
         //list/array of sections
         //set up sectionArray
-        List<Section> sectionList = new List<Section>();
+        static private List<Section> sectionList = new List<Section>();
 
-        
+        int sections = sectionList.Count;
         
 
      //SectionName - string
@@ -60,7 +60,7 @@ namespace Gradebook
                     //set currentsection to new section
                     //return true
                     
-                if (sectionList.Count >= 6)
+                if (sectionList.Count() >= 6)
                 {
                     return false;
                 }
@@ -84,10 +84,6 @@ namespace Gradebook
         {
             //if no sections return false
             
-            if (sectionList.Count == 0)
-            {
-                return false;
-            }
             if (currentSectionName==null)
             {
                 return false;
@@ -129,7 +125,15 @@ namespace Gradebook
         public bool addAssignmentToStudent(string username, string assignmentName, int pointsPossible)
         {
             int index = getSectionIndexBySectionName(currentSectionName);
-            sectionList[index].addAssignment(username, assignmentName, pointsPossible);
+            try
+            {
+                sectionList[index].addAssignment(username, assignmentName, pointsPossible);
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                return false;                
+            }
+            
             return true; //FIXME
         }
 
@@ -153,7 +157,15 @@ namespace Gradebook
         public bool setScore(string username, string assignmentName, int pointsEarned)
         {
             int index = getSectionIndexBySectionName(currentSectionName);
-            sectionList[index].setScore(username, assignmentName, pointsEarned);
+            try
+            {
+                sectionList[index].setScore(username, assignmentName, pointsEarned);
+
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                return false;
+            }
             return true;
         }
 
@@ -181,7 +193,7 @@ namespace Gradebook
         public bool markTardy(string username)
         {
             //return false if no sections
-            if (sectionList.Count == 0)
+            if (sectionList.Count() == 0)
             {
                 return false;
             }
@@ -198,7 +210,7 @@ namespace Gradebook
         //returns: true if successful, false if the student was not found in the current section  or there are no sections
         public bool markAbsent(string username)
         {
-            if (sectionList.Count == 0)
+            if (sectionList.Count() == 0)
             {
                 return false;
             }
