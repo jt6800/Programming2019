@@ -124,6 +124,7 @@ namespace Gradebook
         //same assignmentName or there are no sections
         public bool addAssignmentToStudent(string username, string assignmentName, int pointsPossible)
         {
+
             int index = getSectionIndexBySectionName(currentSectionName);
             try
             {
@@ -134,6 +135,7 @@ namespace Gradebook
                 return false;                
             }
             
+
             return true; //FIXME
         }
 
