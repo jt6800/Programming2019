@@ -173,26 +173,93 @@ i: assignment1
 o: username
 i: jimbob1
 o: points obtained
+i: 100
+o: Operation completed succesfully
+
+/////setting score with non-existent username
+o: assignment name
+i: assignment1
+o: username
+i: student1 //non-existent
+o: There was a problem with the command, operation not comlpeted
+
+///// setting score for non-existent assignment
+o: assignment name
+i: assignment1 //non-existent
+o: username
+i: jimbob1
+o: there was a problem with the command, operation not completed.
 
 /////testing for getting score from non-existent username
 i: getOverallScore
 o: enter username
 i:jimbob1
 o:There was an error with the command, operation not completed
-//checks for existing username in section
 
-o:Type one of the following commands:\nchange section\nadd section\nadd student\nadd assignment to student\nadd assignment to section\nset score\nmark tardy\nmark absent\nget overall score\nget overall score avg\nget assignment score\nget assignment score avg\nget tardy count\nget absent count
+///// mark tardy
+o: username
+i: jimbob1
+o: operation completed successfully
 
-/////testing for real score request
-i: getOverallScore
-o: enter username
-i:jimbob1
+///// mark tardy for non-existent user
+o: username
+i: student1 //nonexistent
+o: There was a problem with the command, operation not completed
+
+///// mark absent
+o: username
+i: jimbob1
+o: operation completed successfully
+
+///// mark absent for non-existent user
+o: username
+i: student1 //nonexistent
+o: There was a problem with the command, operation not completed
+
+///// getting score for assignment
+o: assignment name
+i: assignment1
+o: username
+i: jimbob1
+o: [score]
+
+///// getting assignment score for non-existent assignment
+o: assignment name
+i: assignment1 //nonexistent
+o: username
+i: jimbob1
+o: There was an error with the command, operation not completed.
+
+///// getting assignment score for non-existent username
+o: assignment name
+i: assignment1 
+o: username
+i: jimbob1 //nonexistent
+o: There was an error with the command, operation not completed.
+
+///// getting assignment score avg
+o: assignment name
+i: assignment1 
+o: [score]
+
+///// getting assignment score avg with non-existent assignment
+o: assignment name
+i: assignment1 
+o: There was an error with the command, operation not completed.
+
+///// get overall score
+o: username
+i: jimbob1
 o:[score]
-o:action completed successfully
-//checks for existing username in section
 
+///// get overall score with non-existent username
+o:username
+i: student1
+o: There was an error with the command, operation not completed.
 o:Type one of the following commands:\nchange section\nadd section\nadd student\nadd assignment to student\nadd assignment to section\nset score\nmark tardy\nmark absent\nget overall score\nget overall score avg\nget assignment score\nget assignment score avg\nget tardy count\nget absent count
 
-/////
+///// 
+
+
 
 /////
