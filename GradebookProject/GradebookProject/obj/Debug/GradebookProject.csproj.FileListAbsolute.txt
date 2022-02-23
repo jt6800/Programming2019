@@ -5,3 +5,8 @@ C:\Users\Owner\Documents\GitHub\Programming2019\GradebookProject\GradebookProjec
 C:\Users\Owner\Documents\GitHub\Programming2019\GradebookProject\GradebookProject\bin\Debug\GradebookProject.pdb
 C:\Users\Owner\Documents\GitHub\Programming2019\GradebookProject\GradebookProject\obj\Debug\GradebookProject.exe
 C:\Users\Owner\Documents\GitHub\Programming2019\GradebookProject\GradebookProject\obj\Debug\GradebookProject.pdb
+C:\Users\Jonathan\OneDrive\Documents\GitHub\Programming2019\GradebookProject\GradebookProject\obj\Debug\GradebookProject.csprojAssemblyReference.cache
+C:\Users\Jonathan\OneDrive\Documents\GitHub\Programming2019\GradebookProject\GradebookProject\obj\Debug\GradebookProject.csproj.CoreCompileInputs.cache
+C:\Users\Jonathan\OneDrive\Documents\GitHub\Programming2019\GradebookProject\GradebookProject\obj\Debug\GradebookProject.exe
+C:\Users\Jonathan\OneDrive\Documents\GitHub\Programming2019\GradebookProject\GradebookProject\obj\Debug\GradebookProject.pdb
+C:\Users\Jonathan\OneDrive\Documents\GitHub\Programming2019\GradebookProject\GradebookProject\obj\Debug\GradebookProject.csproj.AssemblyReference.cache

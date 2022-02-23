@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GradebookProject
 {
@@ -22,7 +18,7 @@ namespace GradebookProject
 
         static void MainMenu()
         {
-            
+
             //Console.WriteLine("Current Section: " + globalSectionName);
             Console.WriteLine("Please enter the option you want");
             Console.WriteLine("1.) Add Assignment to Section");
