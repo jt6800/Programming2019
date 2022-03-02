@@ -10,3 +10,4 @@ C:\Users\Jonathan\OneDrive\Documents\GitHub\Programming2019\GradebookProject\Gra
 C:\Users\Jonathan\OneDrive\Documents\GitHub\Programming2019\GradebookProject\GradebookProject\obj\Debug\GradebookProject.exe
 C:\Users\Jonathan\OneDrive\Documents\GitHub\Programming2019\GradebookProject\GradebookProject\obj\Debug\GradebookProject.pdb
 C:\Users\Jonathan\OneDrive\Documents\GitHub\Programming2019\GradebookProject\GradebookProject\obj\Debug\GradebookProject.csproj.AssemblyReference.cache
+C:\Users\Jonathan\OneDrive\Documents\GitHub\Programming2019\GradebookProject\GradebookProject\obj\Debug\GradebookProject.csproj.SuggestedBindingRedirects.cache
